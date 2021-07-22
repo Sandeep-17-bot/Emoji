@@ -10,23 +10,22 @@ export default function App() {
     "😘": "Take my heart ",
     "😎": "Showing some attitude", 
   };
-  // console.log(Object.keys(emojidictionary)) this print object to array
+  
 var emojisWeKnow = Object.keys(emojidictionary)
 
 const [meaning, setmeaning]  = useState("")
-  function onChangeHandler(event){   //processing
+  function onChangeHandler(event){   
   var userInput = event.target.value;
   var meaning = emojidictionary[userInput];
-  // console.log(meaning)  
-  // console.log(emojidictionary[event.target.value])
+ 
   if (meaning === undefined){
 meaning = "We don't have that in our database,Soon I will add them"
   }
-setmeaning(meaning) //react call to show output
+setmeaning(meaning) 
 }
-function emojiClickHandler(emoji){   //processing
+function emojiClickHandler(emoji){   
    var meaning = emojidictionary[emoji];
-   setmeaning(meaning) //react call output
+   setmeaning(meaning) 
 }
 
   return (
@@ -36,7 +35,7 @@ function emojiClickHandler(emoji){   //processing
      <h3 className="h3text"> 'Or' You can click emojis that are given below</h3>
       <input  className = "input" onChange = {onChangeHandler} placeholder="Enter your Emoji here"></input>
       
-       <div className="output">{meaning} </div>  {/*//acutal output set by React using useState */}
+       <div className="output">{meaning} </div>  
       <h3 className="h3text">Click on Emoji</h3>
       {
       emojisWeKnow.map(function(emoji){

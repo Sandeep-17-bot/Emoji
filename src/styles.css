@@ -1,51 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap')
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap")
 .App {
   font-family: sans-serif;
   text-align: center;
+  
 }
 body {
   text-align: center;
   max-width: 100%;
-  background-color: #f0f8ff;
- 
+  background-image: url("https://wallpapercave.com/wp/wp3901133.jpg");
+  justify-content: center;
 }
 h1 {
-  
   padding: 1rem;
   font-size: 4rem;
-  margin:5% 3rem ; 
-  margin-top: 5%;
   margin-bottom: 2%;
   color: #0f0f0fc2;
 }
 .h3text {
   font-style: italic;
-  
 }
 .input {
   margin: 3rem auto;
-  width: 40%;
+  width: 270px;
   height: 8vh;
   border-radius: 0.5rem;
   font-size: 1.2rem;
-  border: 0.1rem  ;
+  border: 0.1rem;
   font-style: italic;
   outline: none;
   box-shadow: 0rem 4px 8px 0rem rgba(0, 0, 0, 0.315);
   margin: 2rem;
   background-color: rgba(255, 255, 255, 0.76);
-  
 }
 .output {
   border-radius: 0.5rem;
-  padding: 1.6rem 0.5rem;
-  margin: 3rem auto;
-  width: 40%;
+  padding: 1rem 0.5rem;
+  margin: 1rem auto;
+  width: 270px;
   font-style: italic;
   box-shadow: 0rem 4px 8px 0rem rgba(0, 0, 0, 0.315);
 
   font-weight: 600;
   font-size: 1.155rem;
   background-color: #f9fcf8ab;
+}
+.content{
+  border: 1px solid rgb(255, 255, 255);
+  max-width: 830px;
+    margin: auto;
+  backdrop-filter: blur(20px);
+
+}
+.emoji{
+  border: 1px solid white;
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  margin: auto;
+  max-width: 500px;
+  padding: 0.5rem;
+}
+.element{
+  margin: 0.5rem;
 }

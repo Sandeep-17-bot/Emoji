@@ -47,9 +47,12 @@ h1 {
   font-size: 1.155rem;
   background-color: #f9fcf8ab;
 }
-.content {
-  margin: auto;
-}
+/* .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 .emoji {
   border-radius: 1.5rem;
   margin: auto;

@@ -12,7 +12,7 @@ export default function App() {
   };
   var emojisWeKnow = Object.keys(emojidictionary);
 
-  const [meaning, setmeaning] = useState("");
+  const [meaning, setmeaning] = useState("Emoji meaning");
   function onChangeHandler(event) {
     var userInput = event.target.value;
     var meaning = emojiList[userInput];
@@ -40,12 +40,12 @@ export default function App() {
           {" "}
           'Or' You can click emojis that are given below
         </h3>
+        <div className="output">{meaning}</div>{" "}
         <input
           className="input"
           onChange={onChangeHandler}
           placeholder="Enter your Emoji here"
         ></input>
-        <div className="output">{meaning}</div>{" "}
         <h3 className="h3text">Click on Emoji</h3>
         <div className="emoji">
           {emojisWeKnow.map(function (emoji) {
